@@ -1,0 +1,88 @@
+import { Project, Certification, Message } from '@/types';
+
+export const MOCK_PROJECTS: Project[] = [
+  {
+    id: 'c1b2a3f4-e5d6-7c8b-9a0b-1c2d3e4f5a6b',
+    title: 'DevSecOps Automated Pipeline & Cloud Infrastructure',
+    slug: 'devsecops-automated-pipeline',
+    short_description: 'منصة أتمتة البنية التحتية الآمنة مع فحص الثغرات التلقائي والنشر عبر Kubernetes و Terraform.',
+    challenge: 'صعوبة اكتشاف الثغرات الأمنية في المراحل المبكرة وتأخر عمليات التكرار بسبب المراجعات اليدوية المستمرة.',
+    solution: 'دمج أدوات SAST (SonarQube) و DAST و Trivy لفحص الحوايا ضمن مسار GitHub Actions مجهّز بأعلى معايير الأمان.',
+    categories: ['devops', 'cybersecurity'],
+    tech_stack: ['Next.js', 'Docker', 'Kubernetes', 'GitHub Actions', 'Trivy', 'Terraform', 'Supabase'],
+    cover_image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1200&auto=format&fit=crop',
+    architecture_diagram: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop',
+    github_url: 'https://github.com/example/devsecops-pipeline',
+    live_url: 'https://devsecops.demo.com',
+    video_demo_url: 'https://youtube.com',
+    status: 'published',
+    is_featured: true,
+    display_order: 1,
+    created_at: '2026-01-10T12:00:00Z',
+    updated_at: '2026-01-10T12:00:00Z',
+  },
+  {
+    id: 'b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e',
+    title: 'Enterprise Cyber Security Dashboard',
+    slug: 'enterprise-cyber-dashboard',
+    short_description: 'واجهة تفاعلية رائدة لمتابعة مخاطر الأمن السيبراني وتحليل السجلات لحظة بلحظة.',
+    challenge: 'تشتت مصادر البيانات وكثرة الإنذارات الكاذبة التي تشتت فريق الحماية الاستجابي.',
+    solution: 'تصميم لوحة تحكم سريعة باستخدام Next.js App Router و Server Components لربط السجلات وعرض التنبيهات ذكياً.',
+    categories: ['frontend', 'cybersecurity'],
+    tech_stack: ['Next.js 16', 'TypeScript', 'Tailwind CSS v4', 'PostgreSQL', 'Supabase Auth'],
+    cover_image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
+    architecture_diagram: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
+    github_url: 'https://github.com/example/cyber-dashboard',
+    live_url: 'https://cyber.demo.com',
+    video_demo_url: null,
+    status: 'published',
+    is_featured: true,
+    display_order: 2,
+    created_at: '2026-02-15T14:30:00Z',
+    updated_at: '2026-02-15T14:30:00Z',
+  },
+];
+
+export const MOCK_CERTIFICATIONS: Certification[] = [
+  {
+    id: 'c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f',
+    name: 'AWS Certified Security - Specialty',
+    issuer: 'Amazon Web Services (AWS)',
+    issue_date: '2024-01-15',
+    expiry_date: '2027-01-15',
+    badge_image: 'https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=600&auto=format&fit=crop',
+    credential_url: 'https://aws.amazon.com/verification',
+    skills_acquired: ['AWS IAM Policy Granular Design', 'KMS Key Management', 'VPC Flow Logs', 'GuardDuty & Security Hub'],
+    created_at: '2024-01-15T00:00:00Z',
+  },
+  {
+    id: 'd4e5f6a7-b89c-0d1e-2f3a-4b5c6d7e8f9a',
+    name: 'Certified Information Systems Security Professional (CISSP)',
+    issuer: '(ISC)²',
+    issue_date: '2023-06-10',
+    expiry_date: '2026-06-10',
+    badge_image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop',
+    credential_url: 'https://isc2.org/verification',
+    skills_acquired: ['Security Architecture', 'Risk Management', 'Cryptography', 'Identity & Access Control'],
+    created_at: '2023-06-10T00:00:00Z',
+  },
+];
+
+export const MOCK_MESSAGES: Message[] = [
+  {
+    id: 'msg-1',
+    sender_name: 'أحمد الإبراهيمي',
+    sender_email: 'ahmed@company.sa',
+    message: 'مرحباً، أود مناقشة مشروع بناء نظام CI/CD آمن وشبكة سحابية لشركتنا.',
+    is_read: false,
+    created_at: '2026-03-01T09:15:00Z',
+  },
+  {
+    id: 'msg-2',
+    sender_name: 'سارة Al-Otaibi',
+    sender_email: 'sara@techfirm.io',
+    message: 'أهلاً بك، قرأت سيرتك الذاتية في DevSecOps ونود دعوتك للمقابلة الفنية.',
+    is_read: true,
+    created_at: '2026-03-02T11:45:00Z',
+  },
+];

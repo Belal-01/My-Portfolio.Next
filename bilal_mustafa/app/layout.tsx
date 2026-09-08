@@ -1,14 +1,20 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
-  title: 'DevSecOps & FrontEnd Architecture Portfolio',
+  title: 'Bilal Khubieh | FrontEnd & DevSecOps Portfolio',
   description: 'Personal Portfolio & Admin Dashboard - FrontEnd & DevSecOps Architecture',
+  icons: {
+    icon: '/logo.svg',
+    shortcut: '/logo.svg',
+    apple: '/logo.svg',
+  },
 };
 
 export default function RootLayout({
@@ -26,21 +32,8 @@ export default function RootLayout({
           {children}
         </main>
 
-        {/* Clean Sharp Footer */}
-        <footer className="w-full border-t border-purple-900/30 bg-black/70 backdrop-blur-md py-8">
-          <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-            <div className="flex items-center gap-3">
-              <img
-                src="/logo.svg"
-                alt="Bilal Khubieh Logo"
-                className="w-8 h-8 object-contain"
-              />
-              <span className="font-bold text-sm text-slate-200">Bilal Khubieh</span>
-              <span className="text-slate-700">|</span>
-              <p>© {new Date().getFullYear()} FrontEnd & DevSecOps Portfolio. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
+        {/* Dedicated Modern Footer */}
+        <Footer />
       </body>
     </html>
   );

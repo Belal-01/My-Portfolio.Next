@@ -5,6 +5,8 @@ import Footer from '@/components/Footer';
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
+import FAQWidget from '@/components/FAQWidget';
+
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
@@ -34,6 +36,9 @@ export default function RootLayout({
 
         {/* Dedicated Modern Footer */}
         <Footer />
+
+        {/* Floating FAQ & Quick Helper Widget */}
+        <FAQWidget />
       </body>
     </html>
   );

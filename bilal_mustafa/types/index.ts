@@ -1,4 +1,4 @@
-export type ProjectCategory = 'frontend' | 'devops' | 'cybersecurity';
+export type ProjectCategory = 'frontend' | 'backend' | 'devops' | 'cybersecurity';
 export type ProjectStatus = 'draft' | 'published' | 'archived';
 
 export interface Project {

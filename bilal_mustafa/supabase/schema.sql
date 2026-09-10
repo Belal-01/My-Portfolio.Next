@@ -8,7 +8,9 @@
 do $$ 
 begin
   if not exists (select 1 from pg_type where typname = 'project_category') then
-    create type project_category as enum ('frontend', 'devops', 'cybersecurity');
+    create type project_category as enum ('frontend', 'backend', 'devops', 'cybersecurity');
+  else
+    alter type project_category add value if not exists 'backend';
   end if;
   if not exists (select 1 from pg_type where typname = 'project_status') then
     create type project_status as enum ('draft', 'published', 'archived');

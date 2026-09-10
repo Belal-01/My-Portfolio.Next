@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ExternalLink, ArrowRight, FolderGit2, ShieldAlert, Cpu, Layout, Loader2 } from 'lucide-react';
+import { ExternalLink, ArrowRight, FolderGit2, ShieldAlert, Cpu, Layout, Server, Loader2 } from 'lucide-react';
 import { Project } from '@/types';
 import { createClient } from '@/lib/supabase/client';
 import { MOCK_PROJECTS } from '@/lib/supabase/mockData';
 
-type CategoryFilter = 'All' | 'frontend' | 'devops' | 'cybersecurity';
+type CategoryFilter = 'All' | 'frontend' | 'backend' | 'devops' | 'cybersecurity';
 
 function GithubIcon({ className }: { className?: string }) {
   return (
@@ -20,6 +20,7 @@ function GithubIcon({ className }: { className?: string }) {
 const FILTERS: { key: CategoryFilter; label: string; icon: typeof Layout }[] = [
   { key: 'All', label: 'All Projects', icon: FolderGit2 },
   { key: 'frontend', label: 'FrontEnd', icon: Layout },
+  { key: 'backend', label: 'BackEnd', icon: Server },
   { key: 'devops', label: 'DevOps', icon: Cpu },
   { key: 'cybersecurity', label: 'Cybersecurity', icon: ShieldAlert },
 ];

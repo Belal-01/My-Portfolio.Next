@@ -14,6 +14,7 @@ import {
   Calendar,
   Layers,
   Layout,
+  Server,
   Cpu,
   ShieldCheck,
   Tag,
@@ -45,6 +46,11 @@ const CATEGORY_CONFIG: Record<
     label: 'FrontEnd',
     icon: Layout,
     badgeStyle: 'bg-cyan-950/70 border-cyan-500/40 text-cyan-300 shadow-cyan-900/20',
+  },
+  backend: {
+    label: 'BackEnd',
+    icon: Server,
+    badgeStyle: 'bg-indigo-950/70 border-indigo-500/40 text-indigo-300 shadow-indigo-900/20',
   },
   devops: {
     label: 'DevOps',
@@ -129,7 +135,7 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
           </Link>
 
           {/* Quick Slug Pill */}
-          {project.slug && (
+          {/* {project.slug && (
             <button
               onClick={copySlugToClipboard}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono bg-slate-900/80 border border-slate-800 text-slate-400 hover:text-slate-200 transition-colors"
@@ -143,7 +149,7 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
                 <Copy className="w-3 h-3 opacity-60" />
               )}
             </button>
-          )}
+          )} */}
         </div>
 
         {/* Header Hero Section */}

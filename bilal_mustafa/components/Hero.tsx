@@ -111,9 +111,9 @@ export default function Hero() {
         </p> */}
 
         {/* Hero Bio Description */}
-        <p className="max-w-xl text-slate-400 text-sm sm:text-base leading-relaxed mb-10">
+        <p className="2xl:max-w-xl max-w-[500px] text-slate-400 text-sm sm:text-base leading-relaxed mb-10">
           Building innovative, user-centric web applications with modern technologies.
-          <br className="hidden sm:inline" />
+          
           Passionate about clean code and exceptional user experiences.
         </p>
 

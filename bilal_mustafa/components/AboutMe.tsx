@@ -20,11 +20,11 @@ export default function AboutMe() {
           <div className="absolute top-0 right-0 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
           
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Hi, I&apos;m a passionate <span className="text-white font-semibold">Front-End Developer</span> with <span className="text-purple-300 font-semibold">2 years of experience</span> building responsive, user-friendly web applications. Skilled in <span className="text-cyan-300 font-semibold">React, Next.js, TypeScript, Tailwind CSS</span>, and modern state management tools (<span className="text-indigo-300 font-semibold">Redux, Zustand</span>). Proven track record of delivering scalable solutions in freelance, hackathon, and professional settings, including a <span className="text-amber-300 font-semibold">1st place hackathon win among 350 teams</span>.
+            Hi, I&apos;m a passionate <span className="text-white font-semibold">Front-End Developer</span> with <span className="text-purple-300 font-semibold">2 years of experience</span> building responsive, user-friendly web applications. Skilled in <span className="text-cyan-300 font-semibold">React, Next.js, TypeScript, Tailwind CSS</span>, and modern state management tools (<span className="text-indigo-300 font-semibold">Redux, Zustand</span>). Proven track record of delivering scalable solutions in freelance, hackathon, and professional settings, including a <span className="text-amber-300 font-semibold">1st-place win at the Syrian Hackathon among 350 teams</span>.
           </p>
 
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Currently expanding my expertise by learning <span className="text-emerald-400 font-semibold">Node.js</span> to become a full-fledged MERN stack developer, with a strong ambition to integrate <span className="text-cyan-400 font-semibold">Artificial Intelligence</span> into modern web applications. Actively seeking new opportunities and challenges to leverage my skills in building dynamic, innovative, and cutting-edge applications.
+            Currently expanding my expertise by learning <span className="text-emerald-400 font-semibold">Spring Boot</span> to expand into <span className="text-purple-300 font-semibold">Full-Stack development</span> and leverage Java-based backend technologies, with a strong ambition to integrate <span className="text-cyan-400 font-semibold">Artificial Intelligence</span> into modern web applications. Actively seeking new opportunities and challenges to leverage my skills in building dynamic, innovative, and smarter digital experiences.
           </p>
 
           {/* Quick Core Skills Pills */}
@@ -39,7 +39,7 @@ export default function AboutMe() {
               Redux &amp; Zustand
             </span>
             <span className="text-xs px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/40 text-emerald-200">
-              Node.js &amp; MERN Stack (In Progress)
+              Spring Boot &amp; Java (In Progress)
             </span>
             <span className="text-xs px-3 py-1 rounded-full bg-amber-950/60 border border-amber-800/40 text-amber-200">
               AI Web Integration

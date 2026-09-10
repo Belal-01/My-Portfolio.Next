@@ -37,11 +37,13 @@ import {
   Database,
   Images,
   Trash2,
-  ShieldX
+  ShieldX,
+  Server,
 } from 'lucide-react';
 
 const CATEGORY_OPTIONS: { id: ProjectCategory; label: string; icon: typeof Layout }[] = [
   { id: 'frontend', label: 'FrontEnd', icon: Layout },
+  { id: 'backend', label: 'BackEnd', icon: Server },
   { id: 'devops', label: 'DevOps', icon: Cpu },
   { id: 'cybersecurity', label: 'Cybersecurity', icon: ShieldAlert },
 ];

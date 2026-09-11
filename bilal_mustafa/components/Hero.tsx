@@ -94,7 +94,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center w-full px-4 pointer-events-none">
         {/* Hero Main Heading */}
         <div className="space-y-4 max-w-4xl mb-6">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-tight drop-shadow-md">
+          <h1 className="text-4xl sm:text-6xl 2xl:text-7xl font-bold tracking-tight text-white leading-tight drop-shadow-md">
             Hi, I&apos;m <span className="gradient-text-purple-cyan font-extrabold">Bilal</span>
           </h1>
 

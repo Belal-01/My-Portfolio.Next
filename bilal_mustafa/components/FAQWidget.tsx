@@ -272,7 +272,7 @@ export default function FAQWidget({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.88, y: 30 }}
             transition={{ type: 'spring', damping: 25, stiffness: 320 }}
-            className="w-[calc(100vw-2rem)] sm:w-[420px] max-h-[86vh] sm:max-h-[640px] flex flex-col rounded-3xl overflow-hidden glass-card border border-purple-500/25 shadow-[0_25px_60px_rgba(0,0,0,0.65),0_0_40px_rgba(139,92,246,0.25)] bg-[#0c0618]/95 backdrop-blur-2xl text-slate-100"
+            className="w-[calc(100vw-2rem)] sm:w-[420px] max-h-[86vh] sm:max-h-[560px] flex flex-col rounded-3xl overflow-hidden glass-card border border-purple-500/25 shadow-[0_25px_60px_rgba(0,0,0,0.65),0_0_40px_rgba(139,92,246,0.25)] bg-[#0c0618]/95 backdrop-blur-2xl text-slate-100"
           >
             {/* --- TOP HEADER --- */}
             <div className="relative p-4 sm:p-5 border-b border-purple-900/30 bg-gradient-to-r from-purple-950/50 via-slate-900/60 to-purple-950/40 flex items-center justify-between">
